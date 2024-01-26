@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    <title>Toggle Background Color</title>
+</head>
+<body>
+
+<!-- Profile section with image and name -->
+<div class="profile">
+    <img src="assets/img1.jpg" alt="" class="rounded-corners">
+    <h1>Hi! I am Dhaiwat Maheria.</h1>
+</div>
+
+<!-- Main content card -->
+<p class="card">
+    I am a Web Design and Development student at Humber IGS, currently residing in Canada but originally hailing
+    from India. My pursuits extend beyond academics, with a keen interest in playing games, reading books, and
+    exploring new destinations through travel. Engaging in these activities not only provides a refreshing break from
+    my studies but also contributes significantly to my personal and intellectual growth. This diverse range of
+    hobbies enhances my overall learning experience, offering a well-rounded approach to both academic and
+    self-development endeavors.
+</p>
+
+<!-- Toggle Background Color button -->
+<button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+
+<script>
+        var isRed = true;
+
+        // JavaScript function to toggle between red and blue background color
+        function toggleBackgroundColor() {
+            // Toggle the background color between red and blue
+            if (isRed) {
+                document.body.style.backgroundColor = 'blue';
+            } else {
+                document.body.style.backgroundColor = 'red';
+            }
+
+            // Toggle the flag
+            isRed = !isRed;
+        }
+    </script>
+
+</body>
+</html>
